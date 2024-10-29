@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -137,7 +138,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  padding-bottom: 35px;
+  padding-bottom: 200px;
 }
 .heroSection .locations {
   padding-top: 35px;
@@ -150,6 +151,8 @@
 }
 .heroSection .locations .row .location {
   text-align: center;
+  flex: 1 1 20%;
+  max-width: 16.6%;
 }
 .heroSection .locations .row .location p {
   color: white;
@@ -238,6 +241,7 @@
 }
 .heroSection .slider .next {
   right: 90px;
+  z-index: 2;
 }
 .heroSection .slider .dots {
   position: absolute;
@@ -259,6 +263,10 @@
   background: #ffe400;
 }
 
+.homeCard {
+  margin-top: -102px;
+  padding-bottom: 90px;
+}
 .homeCard .row {
   display: flex;
   justify-content: center;
@@ -271,11 +279,11 @@
   padding-left: 15px;
 }
 .homeCard .row .col-md-4 .homeCartPict {
-  height: 300px;
-  width: 300px;
+  width: 360px;
   display: flex;
-  justify-content: center;
+  cursor: pointer;
   align-items: center;
+  justify-content: center;
   position: relative;
 }
 .homeCard .row .col-md-4 .homeCartPict::before {
@@ -294,28 +302,843 @@
   width: 100%;
 }
 .homeCard .row .col-md-4 .homeCartPict h2 {
-  position: relative;
-  z-index: 3;
+  position: absolute;
+  z-index: 2;
+  font-size: 36px;
+  color: white;
+}
+.homeCard .row .col-md-4 .homeCartPict::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  background: #ffe400;
+  z-index: 2;
+  transition: width 0.4s ease;
+}
+.homeCard .row .col-md-4 .homeCartPict:hover::after {
+  animation: slideRight 0.4s forwards;
+}
+.homeCard .row .col-md-4 .homeCartPict:not(:hover)::after {
+  animation: slideOut 1s forwards;
+}
+.homeCard .row .col-md-4 .homeCartPict:hover::before {
+  opacity: 0;
 }
 
-@media (min-width: 768px) {
-  .locations .row {
-    padding: 0px 50px;
+.latestPodcastSection .container {
+  max-width: 1200px; /* İstenilen genişlik */
+  margin: 0 auto; /* Ortalar */
+  padding: 0 15px; /* Kenar boşlukları */
+}
+.latestPodcastSection .container .podcast-container {
+  color: #ffffff;
+  text-align: center;
+  margin: 0 auto;
+}
+.latestPodcastSection .container .podcast-container h2 {
+  position: relative;
+  display: inline-block;
+  font-size: 36px;
+  color: white;
+  margin-bottom: 50px;
+}
+.latestPodcastSection .container .podcast-container h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #ffe400;
+  margin-top: 11px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .rightPodcast {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  row-gap: 101px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .podcast-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  overflow: hidden;
+  height: 300px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(1) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 99px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(1).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(2) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 108px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(2).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(3) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 73px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(3).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(4) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 129px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(4).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(5) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 130px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(5).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(6) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 106px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(6).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(7) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 150px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(7).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(8) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 152px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(8).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(9) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 141px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(9).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(10) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 122px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(10).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(11) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 105px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(11).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(12) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 155px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(12).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(13) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 95px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(13).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(14) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 74px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(14).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(15) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 95px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(15).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(16) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 104px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(16).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(17) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 79px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(17).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(18) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 149px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(18).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(19) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 153px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(19).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(20) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 169px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(20).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(21) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 82px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(21).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(22) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 121px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(22).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(23) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 106px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(23).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(24) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 168px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(24).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(25) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 157px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(25).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(26) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 96px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(26).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(27) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 145px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(27).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(28) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 97px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(28).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(29) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 120px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(29).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(30) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 114px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(30).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(31) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 135px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(31).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(32) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 137px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(32).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(33) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 103px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(33).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(34) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 88px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(34).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(35) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 123px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(35).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(36) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 136px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(36).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(37) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 81px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(37).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(38) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 73px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(38).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(39) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 117px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(39).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(40) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 106px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(40).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(41) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 149px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(41).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(42) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 90px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(42).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(43) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 122px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(43).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(44) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 133px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(44).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(45) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 151px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(45).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(46) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 138px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(46).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(47) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 154px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(47).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(48) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 130px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(48).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(49) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 141px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(49).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(50) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 77px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(50).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(51) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 81px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(51).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(52) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 85px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(52).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(53) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 118px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(53).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(54) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 116px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(54).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(55) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 110px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(55).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(56) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 159px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(56).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(57) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 142px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(57).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(58) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 150px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(58).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(59) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 117px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(59).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(60) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 141px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(60).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(61) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 129px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(61).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(62) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 145px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(62).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(63) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 105px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(63).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(64) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 121px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(64).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(65) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 99px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(65).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(66) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 130px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(66).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(67) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 76px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(67).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(68) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 168px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(68).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(69) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 151px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(69).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(70) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 123px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(70).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(71) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 80px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(71).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(72) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 165px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(72).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(73) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 122px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(73).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(74) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 73px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(74).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(75) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 127px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(75).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(76) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 130px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(76).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(77) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 168px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(77).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(78) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 89px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(78).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(79) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 94px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(79).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(80) {
+  width: 1.5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 98px;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(80).animate {
+  animation: wave 0.5s infinite ease-in-out alternate;
+}
+.latestPodcastSection .container .podcast-container .podcast-content .time {
+  font-size: 14px;
+  color: #ffd700;
+  margin-left: 10px;
+}
+.latestPodcastSection .container .podcast-container .listen-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ffd700;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.latestPodcastSection .container .podcast-container .listen-button:hover {
+  background-color: #e6c700;
+}
+@keyframes wave {
+  0% {
+    transform: scaleY(0.5);
   }
-  .locations .row .location {
-    flex: 0 0 16.333333%;
-    max-width: 33.333333%;
+  100% {
+    transform: scaleY(1);
   }
 }
-@media (max-width: 768px) {
-  .locations .row .location {
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
+
+@keyframes slideRight {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
   }
 }
-@media (max-width: 400px) {
-  .locations .row .location {
-    display: none;
+@keyframes slideOut {
+  from {
+    width: 100%;
+  }
+  to {
+    left: 100%;
+    width: 0;
   }
 }
 @media (max-width: 1252px) {
@@ -326,5 +1149,50 @@
 @media (max-width: 762px) {
   .heroSection .slider .next {
     display: none;
+  }
+}
+@media (max-width: 785px) {
+  .heroSection .locations .row .location {
+    text-align: center;
+    flex: 1 1 27%;
+    max-width: 44.6%;
+  }
+}
+@media (max-width: 400px) {
+  .heroSection .locations .row .location {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .homeCard .row .col-md-4 {
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 1174px) {
+  .homeCard .row .col-md-4 .homeCartPict {
+    width: 250px;
+  }
+}
+@media (max-width: 840px) {
+  .homeCard .row .col-md-4 .homeCartPict {
+    width: 450px;
+  }
+}
+@media (max-width: 800px) {
+  .homeCard .row {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 613px) {
+  .latestPodcastSection .podcast-container .podcast-content {
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 613px) {
+  .rightPodcast {
+    overflow: hidden;
   }
 }/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,14 @@
+@mixin yellow-underline {
+    position: relative;
+    display: inline-block;
+    font-size: 36px;
+  color: white;
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #ffe400;
+      margin-top: 11px;
+    }
+  }

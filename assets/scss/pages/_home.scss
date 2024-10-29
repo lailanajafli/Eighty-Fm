@@ -1,0 +1,445 @@
+@import "../pages/mixins";
+
+.heroSection {
+  background-image: url(https://preview.colorlib.com/theme/eighty8/img/bg.jpg.webp);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding-bottom: 200px;
+
+  .locations {
+    padding-top: 35px;
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 80px;
+      margin-right: 80px;
+
+      .location {
+        text-align: center;
+        flex: 1 1 20%;
+        max-width: 16.6%;
+
+        p {
+          color: white;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .slider {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    overflow-x: hidden;
+    margin-bottom: 40px;
+
+    .slide {
+      position: absolute;
+      top: -36%;
+      left: 14%;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 1s ease;
+      z-index: 1;
+
+      &.active {
+        opacity: 1;
+        z-index: 2;
+
+        .captions {
+          .captionOne {
+            font-size: 24px;
+            color: #ffe400;
+            font-weight: 500;
+          }
+
+          .captionOne,
+          .captionTwo {
+            opacity: 0;
+            animation: slideUp 0.8s ease forwards;
+          }
+
+          .captionOne {
+            animation-delay: 0.5s;
+          }
+
+          .captionTwo {
+            animation-delay: 1s;
+            margin-top: 10px;
+            background: rgba(0, 0, 0, 0.75);
+            padding: 5px 10px;
+            color: white;
+            font-size: 32px;
+            line-height: normal;
+            position: relative;
+          }
+        }
+      }
+
+      .captions {
+        position: absolute;
+        bottom: 8%;
+        left: -17px;
+        text-align: left;
+      }
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .prev,
+    .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #ffe400;
+      background: transparent;
+      border: 1px solid #ffe400;
+      padding: 20px;
+      cursor: pointer;
+      border-radius: 50%;
+      transition: transform 0.3s ease, background 0.3s ease;
+
+      &:hover {
+        background: #ffe400;
+        color: #000;
+      }
+    }
+
+    .prev {
+      left: 90px;
+    }
+
+    .next {
+      right: 90px;
+      z-index: 2;
+    }
+
+    .dots {
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+
+      .dot {
+        width: 12px;
+        height: 12px;
+        background: #fff;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background 0.3s;
+
+        &.active {
+          background: #ffe400;
+        }
+      }
+    }
+  }
+}
+
+.homeCard {
+  margin-top: -102px;
+  padding-bottom: 90px;
+
+  .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .col-md-4 {
+      position: relative;
+      padding-right: 15px;
+      display: flex;
+      padding-left: 15px;
+
+      .homeCartPict {
+        width: 360px;
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          background: #000;
+          opacity: 0.75;
+          z-index: 1;
+          transition: all 0.4s;
+        }
+
+        img {
+          width: 100%;
+        }
+
+        h2 {
+          position: absolute;
+          z-index: 2;
+          font-size: 36px;
+          color: white;
+        }
+
+        &::after {
+          position: absolute;
+          content: "";
+          width: 0;
+          height: 4px;
+          left: 0;
+          bottom: 0;
+          background: #ffe400;
+          z-index: 2;
+          transition: width 0.4s ease;
+        }
+
+        &:hover::after {
+          animation: slideRight 0.4s forwards;
+        }
+
+        &:not(:hover)::after {
+          animation: slideOut 1s forwards;
+        }
+
+        &:hover::before {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+.latestPodcastSection {
+  .container {
+    max-width: 1200px; /* İstenilen genişlik */
+    margin: 0 auto; /* Ortalar */
+    padding: 0 15px; /* Kenar boşlukları */
+
+    .podcast-container {
+      color: #ffffff;
+      text-align: center;
+      margin: 0 auto;
+
+      h2 {
+        @include yellow-underline;
+        margin-bottom: 50px;
+      }
+
+      .podcast-content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        .rightPodcast {
+          display: flex;
+          flex-direction: column;
+          align-items: self-start;
+          row-gap: 101px;
+        }
+        .podcast-image {
+          width: 100%;
+          height: auto;
+          border-radius: 5px;
+        }
+
+        .audio-wave {
+          display: flex;
+          align-items: center;
+          gap: 2px;
+          overflow: hidden;
+          height: 300px;
+
+          // 50 tane bar oluşturarak, her birine farklı yükseklik atanıyor
+          @for $i from 1 through 80 {
+            .bar:nth-child(#{$i}) {
+              width: 1.5px;
+              background-color: #ffffff;
+              border-radius: 2px;
+              height: #{random(100) +
+                70}px; // 20px ile 70px arasında rastgele yükseklik
+
+              &.animate {
+                animation: wave 0.5s infinite ease-in-out alternate;
+              }
+            }
+          }
+        }
+
+        .time {
+          font-size: 14px;
+          color: #ffd700;
+          margin-left: 10px;
+        }
+      }
+
+      .listen-button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #ffd700;
+        color: #000;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #e6c700;
+        }
+      }
+    }
+  }
+
+  @keyframes wave {
+    0% {
+      transform: scaleY(0.5);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+}
+
+@keyframes slideRight {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    width: 100%;
+  }
+  to {
+    left: 100%;
+    width: 0;
+  }
+}
+
+// Responsive Medya Sorguları
+@media (max-width: 1252px) {
+  .heroSection {
+    .slider {
+      .prev {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 762px) {
+  .heroSection {
+    .slider {
+      .next {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 785px) {
+  .heroSection {
+    .locations {
+      .row {
+        .location {
+          text-align: center;
+          flex: 1 1 27%;
+          max-width: 44.6%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .heroSection {
+    .locations {
+      .row {
+        .location {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .homeCard {
+    .row {
+      .col-md-4 {
+        margin-bottom: 20px;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1174px) {
+  .homeCard {
+    .row {
+      .col-md-4 {
+        .homeCartPict {
+          width: 250px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .homeCard {
+    .row {
+      .col-md-4 {
+        .homeCartPict {
+          width: 450px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .homeCard {
+    .row {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+// podcast responsive
+
+@media (max-width: 613px) {
+  .latestPodcastSection .podcast-container .podcast-content {
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 613px) {
+  .rightPodcast {
+    overflow: hidden;
+  }
+}
+
+// podcast responsive

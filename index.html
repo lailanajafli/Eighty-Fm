@@ -32,8 +32,8 @@
                         src="https://preview.colorlib.com/theme/eighty8/img/logo.png.webp"
                         alt>
                 </a>
-                <!-- Menü İkonu -->
-                <div class="menu-icon">&#9776;</div> <!-- Menü ikonu -->
+
+                <div class="menu-icon">&#9776;</div>
 
                 <nav class="navBar">
                     <ul class="navList">
@@ -70,7 +70,7 @@
             </div>
         </header>
 
-        <main>
+        <main style="  background-color: #191919;">
             <section class="heroSection">
                 <div class="container">
                     <div class="locations">
@@ -114,7 +114,7 @@
                         </div>
                     </div>
                     <div class="slider">
-                        <!-- Slider İçeriği -->
+                        <!-- Slider -->
                         <div class="slide active">
                             <div class="captions">
                                 <span class="captionOne">UP NEXT</span>
@@ -137,13 +137,11 @@
                             </div>
                         </div>
 
-                        <!-- Sağ ve Sol Oklar -->
                         <button class="prev"><i
                                 class="fa-solid fa-angles-left"></i></button>
                         <button class="next"><i
                                 class="fa-solid fa-angles-right"></i></button>
 
-                        <!-- Alt Daireler -->
                         <div class="dots">
                             <span class="dot active" data-index="0"></span>
                             <span class="dot" data-index="1"></span>
@@ -160,8 +158,8 @@
                                 <img
                                     src="https://preview.colorlib.com/theme/eighty8/img/promo/1.jpg.webp"
                                     alt="homeCartPictOne">
-                                </div>
                                 <h2>Our DJ’s</h2>
+                            </div>
 
                         </div>
                         <div class="col-md-4">
@@ -169,6 +167,7 @@
                                 <img
                                     src="https://preview.colorlib.com/theme/eighty8/img/promo/2.jpg.webp"
                                     alt="homeCartPictTwo">
+                                <h2>Live Streans</h2>
                             </div>
 
                         </div>
@@ -177,11 +176,45 @@
                                 <img
                                     src="https://preview.colorlib.com/theme/eighty8/img/promo/3.jpg.webp"
                                     alt="homeCartPictThree">
+                                <h2>Events</h2>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <section class="latestPodcastSection">
+                <div  class="container">
+                    <div class="podcast-container">
+                        <h2>Latest Podcast</h2>
+
+                        <div class="podcast-content">
+                            <div style="width: 400px;">
+                                <img
+                                    src="https://preview.colorlib.com/theme/eighty8/img/albam.jpg.webp"
+                                    alt="Podcast Cover" class="podcast-image">
+                            </div>
+                            <div class="rightPodcast">
+                                <div>
+                                    <p>Hernan Cattaneo - Residence #376</p>
+                                </div>
+                                <div style="display: flex; align-items: center;">
+                                    <canvas id="waveformCanvas" width="300"
+                                        height="100"></canvas>
+                                    <div class="time">01:14</div>
+                                </div>
+
+                                <button id="playButton" class="listen-button"
+                                    onclick="togglePlay()">Listen Live</button>
+
+                                <audio id="podcastAudio"
+                                    src="./assets/scss/img/sonata.mp3"></audio>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
         </main>
         <script>
             document.addEventListener("DOMContentLoaded", () => {
@@ -216,17 +249,78 @@
         });
     });
 
-    // Otomatik geçiş ayarı (isteğe bağlı)
     setInterval(() => {
         currentIndex = (currentIndex + 1) % slides.length;
         showSlide(currentIndex);
-    }, 5000); // 5 saniyede bir değişim
+    }, 5000);
 
               menuIcon.addEventListener("click", () => {
-                // Menü açma/kapatma
                 navBar.classList.toggle("active");
               });
             });
+
+
+
+
+// audio
+const canvas = document.getElementById("waveformCanvas");
+const ctx = canvas.getContext("2d");
+const canvasWidth = canvas.width;
+const canvasHeight = canvas.height;
+const barWidth = 2;
+const barGap = 1;
+let animationFrameId;
+let isPlaying = false;
+
+const audio = document.getElementById("podcastAudio");
+const totalBars = Math.floor(canvasWidth / (barWidth + barGap));
+let heights = [];
+
+// Başlangıçta rastgele yükseklikleri ayarla
+function initializeHeights() {
+  heights = Array.from({ length: totalBars }, () => Math.random() * (canvasHeight * 0.8) + (canvasHeight * 0.3));
+}
+
+// Dalgaları çiz
+function drawWaveform(animated = false) {
+  ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+
+  const time = Date.now() * 0.009; // Zaman çarpanı, hızı kontrol eder
+
+  for (let i = 0; i < totalBars; i++) {
+    // Her bir çubuğun yüksekliğini zamanla değiştirme
+    const barHeight = heights[i] + Math.sin(time + i) * 5; // Yavaş dalgalanma için daha az dalgalanma ekle
+
+    const x = i * (barWidth + barGap);
+    const y = (canvasHeight - barHeight) / 2;
+
+    ctx.fillStyle = "#ffffff";
+    ctx.fillRect(x, y, barWidth, barHeight);
+  }
+
+  if (isPlaying && animated) {
+    animationFrameId = requestAnimationFrame(() => drawWaveform(true));
+  }
+}
+
+function togglePlay() {
+  if (audio.paused) {
+    audio.play();
+    isPlaying = true;
+    drawWaveform(true); // Animasyonu başlat
+    document.getElementById("playButton").textContent = "Pause";
+  } else {
+    audio.pause();
+    isPlaying = false;
+    cancelAnimationFrame(animationFrameId); // Animasyonu durdur
+    drawWaveform(false); // Dalgaları sabit olarak göster
+    document.getElementById("playButton").textContent = "Listen Live";
+  }
+}
+
+// Sayfa yüklendiğinde dalgaları göster
+initializeHeights(); // Yükseklikleri başlat
+drawWaveform(false); // İlk başta dalgaları göster
 
 
           </script>
