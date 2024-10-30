@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -329,9 +328,9 @@
 }
 
 .latestPodcastSection .container {
-  max-width: 1200px; /* İstenilen genişlik */
-  margin: 0 auto; /* Ortalar */
-  padding: 0 15px; /* Kenar boşlukları */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 .latestPodcastSection .container .podcast-container {
   color: #ffffff;
@@ -381,7 +380,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 99px;
+  height: 153px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(1).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -390,7 +389,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 108px;
+  height: 76px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(2).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -399,7 +398,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 73px;
+  height: 118px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(3).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -408,7 +407,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 129px;
+  height: 73px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(4).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -417,7 +416,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 130px;
+  height: 131px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(5).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -426,7 +425,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 106px;
+  height: 141px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(6).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -435,7 +434,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 150px;
+  height: 164px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(7).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -444,7 +443,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 152px;
+  height: 86px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(8).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -453,7 +452,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 141px;
+  height: 148px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(9).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -462,7 +461,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 122px;
+  height: 163px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(10).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -471,7 +470,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 105px;
+  height: 109px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(11).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -480,7 +479,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 155px;
+  height: 89px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(12).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -489,7 +488,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 95px;
+  height: 96px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(13).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -498,7 +497,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 74px;
+  height: 169px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(14).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -507,7 +506,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 95px;
+  height: 79px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(15).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -516,7 +515,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 104px;
+  height: 78px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(16).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -525,7 +524,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 79px;
+  height: 95px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(17).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -534,7 +533,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 149px;
+  height: 127px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(18).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -543,7 +542,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 153px;
+  height: 139px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(19).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -552,7 +551,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 169px;
+  height: 143px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(20).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -561,7 +560,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 82px;
+  height: 105px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(21).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -570,7 +569,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 121px;
+  height: 76px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(22).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -579,7 +578,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 106px;
+  height: 101px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(23).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -588,7 +587,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 168px;
+  height: 142px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(24).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -597,7 +596,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 157px;
+  height: 103px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(25).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -606,7 +605,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 96px;
+  height: 119px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(26).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -615,7 +614,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 145px;
+  height: 107px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(27).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -624,7 +623,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 97px;
+  height: 160px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(28).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -633,7 +632,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 120px;
+  height: 100px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(29).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -642,7 +641,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 114px;
+  height: 168px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(30).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -651,7 +650,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 135px;
+  height: 92px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(31).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -660,7 +659,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 137px;
+  height: 152px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(32).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -669,7 +668,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 103px;
+  height: 156px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(33).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -678,7 +677,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 88px;
+  height: 170px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(34).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -687,7 +686,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 123px;
+  height: 156px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(35).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -696,7 +695,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 136px;
+  height: 153px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(36).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -705,7 +704,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 81px;
+  height: 156px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(37).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -714,7 +713,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 73px;
+  height: 88px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(38).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -723,7 +722,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 117px;
+  height: 96px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(39).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -732,7 +731,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 106px;
+  height: 85px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(40).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -741,7 +740,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 149px;
+  height: 111px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(41).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -750,7 +749,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 90px;
+  height: 128px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(42).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -759,7 +758,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 122px;
+  height: 125px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(43).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -768,7 +767,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 133px;
+  height: 113px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(44).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -777,7 +776,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 151px;
+  height: 89px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(45).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -786,7 +785,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 138px;
+  height: 129px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(46).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -795,7 +794,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 154px;
+  height: 129px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(47).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -804,7 +803,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 130px;
+  height: 129px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(48).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -813,7 +812,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 141px;
+  height: 152px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(49).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -822,7 +821,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 77px;
+  height: 115px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(50).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -831,7 +830,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 81px;
+  height: 101px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(51).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -840,7 +839,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 85px;
+  height: 162px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(52).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -849,7 +848,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 118px;
+  height: 85px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(53).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -858,7 +857,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 116px;
+  height: 159px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(54).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -867,7 +866,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 110px;
+  height: 88px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(55).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -876,7 +875,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 159px;
+  height: 96px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(56).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -885,7 +884,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 142px;
+  height: 86px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(57).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -894,7 +893,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 150px;
+  height: 165px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(58).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -903,7 +902,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 117px;
+  height: 81px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(59).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -912,7 +911,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 141px;
+  height: 74px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(60).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -921,7 +920,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 129px;
+  height: 108px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(61).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -930,7 +929,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 145px;
+  height: 105px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(62).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -939,7 +938,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 105px;
+  height: 115px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(63).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -948,7 +947,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 121px;
+  height: 83px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(64).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -957,7 +956,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 99px;
+  height: 111px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(65).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -966,7 +965,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 130px;
+  height: 84px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(66).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -975,7 +974,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 76px;
+  height: 81px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(67).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -984,7 +983,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 168px;
+  height: 89px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(68).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -993,7 +992,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 151px;
+  height: 87px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(69).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1002,7 +1001,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 123px;
+  height: 82px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(70).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1020,7 +1019,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 165px;
+  height: 123px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(72).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1029,7 +1028,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 122px;
+  height: 134px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(73).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1038,7 +1037,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 73px;
+  height: 103px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(74).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1047,7 +1046,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 127px;
+  height: 72px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(75).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1056,7 +1055,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 130px;
+  height: 103px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(76).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1065,7 +1064,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 168px;
+  height: 109px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(77).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1074,7 +1073,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 89px;
+  height: 113px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(78).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1083,7 +1082,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 94px;
+  height: 97px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(79).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1092,7 +1091,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 98px;
+  height: 166px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(80).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1122,6 +1121,48 @@
   100% {
     transform: scaleY(1);
   }
+}
+
+.chartsIndex {
+  margin-top: 90px;
+}
+.chartsIndex .chartsIndexText {
+  text-align: center;
+}
+.chartsIndex .chartsIndexText h2 {
+  position: relative;
+  display: inline-block;
+  font-size: 36px;
+  color: white;
+  margin-bottom: 50px;
+}
+.chartsIndex .chartsIndexText h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #ffe400;
+  margin-top: 11px;
+}
+.chartsIndex .indexChartsImg {
+  background-image: url(https://preview.colorlib.com/theme/eighty8/img/chart-bg.jpg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 550px;
+  align-items: center;
+  -webkit-box-align: center;
+  background-position: top center;
+}
+.chartsIndex .indexChartsImg .container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: 80px;
+}
+.chartsIndex .indexChartsImg .container img {
+  max-width: 100%;
+  vertical-align: middle;
 }
 
 @keyframes slideRight {
@@ -1194,5 +1235,161 @@
 @media (max-width: 613px) {
   .rightPodcast {
     overflow: hidden;
+  }
+}
+.footer {
+  background: #212121;
+  padding: 100px 0;
+}
+.footer .container {
+  width: 80%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.footer .container .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-content: space-between;
+}
+.footer .container .row .ftCont .ftTitle {
+  border-bottom: 1px solid #fff;
+  margin-bottom: 45px;
+}
+.footer .container .row .ftCont .ftTitle h4 {
+  position: relative;
+  display: inline-block;
+  font-size: 36px;
+  color: white;
+  font-size: 25px;
+}
+.footer .container .row .ftCont .ftTitle h4::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #ffe400;
+  margin-top: 11px;
+}
+.footer .container .row .ftCont .orderList a {
+  font-size: 16px;
+  color: #a9a9a9;
+  margin-bottom: 15px;
+  display: block;
+  font-weight: 500;
+}
+.footer .container .row .ftCont .orderList a span {
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  background: #ffe400;
+  color: #212121;
+  font-size: 14px;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+.footer .container .row .ftCont .ftBlog {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer .container .row .ftCont .ftBlog .blogItem {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.footer .container .row .ftCont .ftBlog .blogItem .blogThumb {
+  width: 100%;
+  max-width: 100px;
+  overflow: hidden;
+}
+.footer .container .row .ftCont .ftBlog .blogItem .blogContent {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer .container .row .ftCont .ftBlog .blogItem .blogContent p {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+}
+.footer .container .row .ftCont .ftBlog .blogItem .blogContent a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffe400;
+}
+.footer .container .row .ftCont .ftContact {
+  margin-bottom: 50px;
+}
+.footer .container .row .ftCont .ftContact p {
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.8;
+}
+.footer .container .row .ftCont .ftContact p span {
+  color: #ffe400;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    padding: 80px 0;
+  }
+  .footer .container {
+    width: 90%;
+  }
+  .footer .container .row {
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 0;
+  }
+  .footer .container {
+    width: 95%;
+  }
+  .footer .container .row {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .footer .container .row .ftCont .ftTitle h4 {
+    font-size: 22px;
+  }
+  .footer .container .row .ftCont .orderList a {
+    font-size: 15px;
+  }
+  .footer .container .row .ftCont .ftContact p {
+    font-size: 15px;
+  }
+  .footer .container .row .ftBlog {
+    gap: 15px;
+  }
+  .footer .container .row .ftBlog .blogItem {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer .container .row .ftBlog .blogItem .blogThumb {
+    max-width: 80px;
+    margin: 0 auto;
+  }
+  .footer .container .row .ftBlog .blogItem .blogContent {
+    align-items: center;
+  }
+  .footer .container .row .ftBlog .blogItem .blogContent p, .footer .container .row .ftBlog .blogItem .blogContent a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .ftBlog .blogItem {
+    gap: 10px;
+  }
+  .ftBlog .blogItem .blogThumb {
+    max-width: 60px;
+  }
+  .ftBlog .blogItem .blogContent p, .ftBlog .blogItem .blogContent a {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=index.css.map */

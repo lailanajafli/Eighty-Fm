@@ -229,9 +229,9 @@
 
 .latestPodcastSection {
   .container {
-    max-width: 1200px; /* İstenilen genişlik */
-    margin: 0 auto; /* Ortalar */
-    padding: 0 15px; /* Kenar boşlukları */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 
     .podcast-container {
       color: #ffffff;
@@ -267,14 +267,14 @@
           overflow: hidden;
           height: 300px;
 
-          // 50 tane bar oluşturarak, her birine farklı yükseklik atanıyor
+
           @for $i from 1 through 80 {
             .bar:nth-child(#{$i}) {
               width: 1.5px;
               background-color: #ffffff;
               border-radius: 2px;
               height: #{random(100) +
-                70}px; // 20px ile 70px arasında rastgele yükseklik
+                70}px; 
 
               &.animate {
                 animation: wave 0.5s infinite ease-in-out alternate;
@@ -313,6 +313,37 @@
     }
     100% {
       transform: scaleY(1);
+    }
+  }
+}
+
+.chartsIndex {
+  margin-top: 90px;
+  .chartsIndexText {
+    text-align: center;
+    h2 {
+      @include yellow-underline;
+      margin-bottom: 50px;
+    }
+  }
+  .indexChartsImg {
+    background-image: url(https://preview.colorlib.com/theme/eighty8/img/chart-bg.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 550px;
+    align-items: center;
+    -webkit-box-align: center;
+    background-position: top center;
+    .container {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: 80px;
+      img {
+        max-width: 100%;
+        vertical-align: middle;
+      }
     }
   }
 }

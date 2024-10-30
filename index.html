@@ -49,21 +49,21 @@
                     </ul>
                 </nav>
                 <div class="sosialIcons">
-                    <a href="https://x.com/"><i class="fa-brands fa-twitter"
+                    <a target="_blank" href="https://x.com/"><i class="fa-brands fa-twitter"
                             style="color: #ffffff;"></i></a>
-                    <a href="https://soundcloud.com/"><i
+                    <a target="_blank"href="https://soundcloud.com/"><i
                             class="fa-brands fa-soundcloud"
                             style="color: #ffffff;"></i></a>
-                    <a href="https://instagram.com/"><i
+                    <a target="_blank"href="https://instagram.com/"><i
                             class="fa-brands fa-instagram"
                             style="color: #ffffff;"></i></a>
-                    <a href="https://www.google.com/"><i
+                    <a target="_blank"href="https://www.google.com/"><i
                             class="fa-brands fa-google-plus-g"
                             style="color: #ffffff;"></i></a>
-                    <a href="https://facebook.com/"><i
+                    <a target="_blank" href="https://facebook.com/"><i
                             class="fa-brands fa-facebook-f"
                             style="color: #ffffff;"></i></a>
-                    <a href="https://youtube.com/"><i
+                    <a target="_blank"href="https://youtube.com/"><i
                             class="fa-brands fa-youtube"
                             style="color: #ffffff;"></i></a>
                 </div>
@@ -183,7 +183,7 @@
                 </div>
             </section>
             <section class="latestPodcastSection">
-                <div  class="container">
+                <div class="container">
                     <div class="podcast-container">
                         <h2>Latest Podcast</h2>
 
@@ -197,7 +197,8 @@
                                 <div>
                                     <p>Hernan Cattaneo - Residence #376</p>
                                 </div>
-                                <div style="display: flex; align-items: center;">
+                                <div
+                                    style="display: flex; align-items: center;">
                                     <canvas id="waveformCanvas" width="300"
                                         height="100"></canvas>
                                     <div class="time">01:14</div>
@@ -215,115 +216,105 @@
                 </div>
             </section>
 
+            <section class="chartsIndex">
+                <div class="chartsIndexText">
+                    <h2>Charts</h2>
+                </div>
+                <div class="indexChartsImg">
+                    <div class="container">
+                        <img
+                            src="https://preview.colorlib.com/theme/eighty8/img/logo-big.png.webp"
+                            alt>
+                    </div>
+                </div>
+            </section>
+
+            <!-- footer start -->
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="ftCont">
+                            <div class="ftTitle">
+                                <h4>Locations</h4>
+                            </div>
+                            <ul class="orderList">
+                                <li><a href="#">Berlin</a></li>
+                                <li><a href="#">Bucharest</a></li>
+                                <li><a href="#">London</a></li>
+                                <li><a href="#">Budapest</a></li>
+                                <li><a href="#">Tel Aviv</a></li>
+                                <li><a href="#">Moscow</a></li>
+                            </ul>
+                        </div>
+                        <div class="ftCont">
+                            <div class="ftTitle">
+                                <h4>Top Shows</h4>
+                            </div>
+                            <ul class="orderList">
+                                <li><a href="#"><span>1</span>88,8 Weekly
+                                        Chart</a></li>
+                                <li><a href="#"><span>2</span>Transitions - John
+                                        Digweed</a></li>
+                                <li><a href="#"><span>3</span>Who’s On Top? with
+                                        John Doe</a></li>
+                                <li><a href="#"><span>4</span>88,8 News</a></li>
+                                <li><a href="#"><span>5</span>Electronic
+                                        Worriors</a></li>
+                            </ul>
+                        </div>
+                        <div class="ftCont">
+                            <div class="ftTitle">
+                                <h4>Blog</h4>
+                            </div>
+                            <div class="ftBlog">
+                                <div class="blogItem">
+                                    <div class="blogThumb">
+                                        <img
+                                            src="https://preview.colorlib.com/theme/eighty8/img/blog/thumb/1.jpg.webp"
+                                            alt="blog1">
+                                    </div>
+                                    <div class="blogContent">
+                                        <p>5 Things to know when you attend a
+                                            music festival. </p>
+                                        <a href="#">Continue Reading</a>
+                                    </div>
+                                </div>
+                                <div class="blogItem">
+                                    <div class="blogThumb">
+                                        <img
+                                            src="https://preview.colorlib.com/theme/eighty8/img/blog/thumb/2.jpg.webp"
+                                            alt="blog1">
+                                    </div>
+                                    <div class="blogContent">
+                                        <p>5 Things to know when you attend a
+                                            music festival. </p>
+                                        <a href="#">Continue Reading</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ftCont">
+                            <div class="ftTitle">
+                                <h4>Contact</h4>
+                            </div>
+                            <div class="ftContact">
+                                <p><span>A:</span> 4111 Birch Street, Berlin</p>
+                                <p><span>T:</span> 317-822-4383</p>
+                                <p><span>E:</span> office@88point8.com</p>
+                            </div>
+                            <img
+                                src="https://preview.colorlib.com/theme/eighty8/img/logo.png.webp"
+                                alt="logo">
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- footer end -->
+
         </main>
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-              const menuIcon = document.querySelector(".menu-icon");
-              const navBar = document.querySelector(".navBar");
-              const slides = document.querySelectorAll(".slide");
-    const dots = document.querySelectorAll(".dot");
-
-    let currentIndex = 0;
-  
-    const showSlide = (index) => {
-        slides.forEach((slide, i) => {
-            slide.classList.toggle("active", i === index);
-            dots[i].classList.toggle("active", i === index);
-        });
-    };
-
-    document.querySelector(".next").addEventListener("click", () => {
-        currentIndex = (currentIndex + 1) % slides.length;
-        showSlide(currentIndex);
-    });
-
-    document.querySelector(".prev").addEventListener("click", () => {
-        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-        showSlide(currentIndex);
-    });
-
-    dots.forEach((dot, index) => {
-        dot.addEventListener("click", () => {
-            currentIndex = index;
-            showSlide(currentIndex);
-        });
-    });
-
-    setInterval(() => {
-        currentIndex = (currentIndex + 1) % slides.length;
-        showSlide(currentIndex);
-    }, 5000);
-
-              menuIcon.addEventListener("click", () => {
-                navBar.classList.toggle("active");
-              });
-            });
-
-
-
-
-// audio
-const canvas = document.getElementById("waveformCanvas");
-const ctx = canvas.getContext("2d");
-const canvasWidth = canvas.width;
-const canvasHeight = canvas.height;
-const barWidth = 2;
-const barGap = 1;
-let animationFrameId;
-let isPlaying = false;
-
-const audio = document.getElementById("podcastAudio");
-const totalBars = Math.floor(canvasWidth / (barWidth + barGap));
-let heights = [];
-
-// Başlangıçta rastgele yükseklikleri ayarla
-function initializeHeights() {
-  heights = Array.from({ length: totalBars }, () => Math.random() * (canvasHeight * 0.8) + (canvasHeight * 0.3));
-}
-
-// Dalgaları çiz
-function drawWaveform(animated = false) {
-  ctx.clearRect(0, 0, canvasWidth, canvasHeight);
-
-  const time = Date.now() * 0.009; // Zaman çarpanı, hızı kontrol eder
-
-  for (let i = 0; i < totalBars; i++) {
-    // Her bir çubuğun yüksekliğini zamanla değiştirme
-    const barHeight = heights[i] + Math.sin(time + i) * 5; // Yavaş dalgalanma için daha az dalgalanma ekle
-
-    const x = i * (barWidth + barGap);
-    const y = (canvasHeight - barHeight) / 2;
-
-    ctx.fillStyle = "#ffffff";
-    ctx.fillRect(x, y, barWidth, barHeight);
-  }
-
-  if (isPlaying && animated) {
-    animationFrameId = requestAnimationFrame(() => drawWaveform(true));
-  }
-}
-
-function togglePlay() {
-  if (audio.paused) {
-    audio.play();
-    isPlaying = true;
-    drawWaveform(true); // Animasyonu başlat
-    document.getElementById("playButton").textContent = "Pause";
-  } else {
-    audio.pause();
-    isPlaying = false;
-    cancelAnimationFrame(animationFrameId); // Animasyonu durdur
-    drawWaveform(false); // Dalgaları sabit olarak göster
-    document.getElementById("playButton").textContent = "Listen Live";
-  }
-}
-
-// Sayfa yüklendiğinde dalgaları göster
-initializeHeights(); // Yükseklikleri başlat
-drawWaveform(false); // İlk başta dalgaları göster
-
-
-          </script>
+        <script src="./script.js"></script>
 
     </body>
 </html>
