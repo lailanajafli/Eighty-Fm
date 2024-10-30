@@ -1,14 +1,60 @@
 @mixin yellow-underline {
-    position: relative;
-    display: inline-block;
-    font-size: 36px;
+  position: relative;
+  display: inline-block;
+  font-size: 36px;
   color: white;
-    &::after {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 3px;
-      background-color: #ffe400;
-      margin-top: 11px;
-    }
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #ffe400;
+    margin-top: 11px;
   }
+}
+
+@mixin hover-underline {
+  width: 360px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #000;
+    opacity: 0.75;
+    z-index: 1;
+    transition: all 0.4s;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    background: #ffe400;
+    z-index: 2;
+    transition: width 0.4s ease;
+  }
+
+  &:hover::after {
+    animation: slideRight 0.4s forwards;
+  }
+
+  &:not(:hover)::after {
+    animation: slideOut 1s forwards;
+  }
+
+  &:hover::before {
+    opacity: 0;
+  }
+}

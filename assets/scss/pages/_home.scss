@@ -168,26 +168,7 @@
       padding-left: 15px;
 
       .homeCartPict {
-        width: 360px;
-        display: flex;
-        cursor: pointer;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-
-        &::before {
-          position: absolute;
-          content: "";
-          width: 100%;
-          height: 100%;
-          left: 0;
-          top: 0;
-          background: #000;
-          opacity: 0.75;
-          z-index: 1;
-          transition: all 0.4s;
-        }
-
+        @include hover-underline;
         img {
           width: 100%;
         }
@@ -197,30 +178,6 @@
           z-index: 2;
           font-size: 36px;
           color: white;
-        }
-
-        &::after {
-          position: absolute;
-          content: "";
-          width: 0;
-          height: 4px;
-          left: 0;
-          bottom: 0;
-          background: #ffe400;
-          z-index: 2;
-          transition: width 0.4s ease;
-        }
-
-        &:hover::after {
-          animation: slideRight 0.4s forwards;
-        }
-
-        &:not(:hover)::after {
-          animation: slideOut 1s forwards;
-        }
-
-        &:hover::before {
-          opacity: 0;
         }
       }
     }
@@ -267,14 +224,12 @@
           overflow: hidden;
           height: 300px;
 
-
           @for $i from 1 through 80 {
             .bar:nth-child(#{$i}) {
               width: 1.5px;
               background-color: #ffffff;
               border-radius: 2px;
-              height: #{random(100) +
-                70}px; 
+              height: #{random(100) + 70}px;
 
               &.animate {
                 animation: wave 0.5s infinite ease-in-out alternate;
