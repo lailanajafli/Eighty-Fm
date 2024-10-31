@@ -1,1 +1,256 @@
 @import "../pages/mixins";
+
+.aboutBackImg {
+  background: url(https://preview.colorlib.com/theme/eighty8/img/page-info-bg.jpg.webp)
+    no-repeat center/cover;
+  height: calc(100vh - 350px);
+  padding-top: calc(20vh);
+  text-align: center;
+
+  h2 {
+    @include yellow-underline;
+    font-size: calc(2.3rem + 2.3vw);
+  }
+}
+
+.shortHistorySection {
+  padding: 20px;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .row {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 80px;
+
+      .topHistory {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        .bottomHistoryImg {
+          flex: 1;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        .bottomHistoryText {
+          flex: 1;
+          h4 {
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: white;
+            font-size: 24px;
+          }
+          p {
+            font-size: 16px;
+            margin-bottom: 0;
+            color: white;
+            line-height: 1.8;
+          }
+        }
+      }
+
+      // Tablet ekranlar için
+      @media (max-width: 1024px) {
+        .row {
+          gap: 40px;
+        }
+
+        .topHistory {
+          gap: 40px;
+          .bottomHistoryImg img {
+            border-radius: 8px;
+          }
+        }
+
+        .bottomHistoryText h4 {
+          font-size: 22px;
+        }
+
+        .bottomHistoryText p {
+          font-size: 15px;
+        }
+      }
+
+      // Küçük ekranlar için
+      @media (max-width: 768px) {
+        .topHistory {
+          flex-direction: column;
+          text-align: center;
+          gap: 30px;
+
+          .bottomHistoryImg,
+          .bottomHistoryText {
+            flex: unset;
+            width: 100%;
+          }
+        }
+        .bottomHistoryText {
+          h4 {
+            font-size: 20px;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      // Küçük mobil ekranlar için
+      @media (max-width: 480px) {
+        padding: 10px;
+        .row {
+          gap: 20px;
+        }
+
+        .topHistory {
+          gap: 20px;
+        }
+
+        .bottomHistoryText {
+          h4 {
+            font-size: 18px;
+            margin-bottom: 15px;
+          }
+          p {
+            font-size: 13px;
+            line-height: 1.6;
+          }
+        }
+      }
+    }
+  }
+}
+
+.youtubeVideo {
+  background-image: url(https://preview.colorlib.com/theme/eighty8/img/video-preview-bg.jpg.webp);
+  min-height: 736px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  .container {
+    .ytContent {
+      text-align: center;
+      padding: 0px 20px;
+      h2 {
+        @include yellow-underline;
+        margin-bottom: 50px;
+      }
+      p {
+        font-size: 18px;
+        color: white;
+        text-align: center;
+      }
+      a {
+        img {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+}
+
+.aboutCartSection {
+  padding: 20px;
+  margin-top: 60px;
+
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+
+      .aboutCartCont {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+
+      .aboutCart {
+        flex: 1 1 calc(33.333% - 20px);
+        padding: 20px;
+        .aboutCartImg {
+          img {
+            width: 100%;
+          }
+        }
+
+        .aboutCartContent {
+          h4 {
+            font-weight: 700;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: white;
+          }
+          p {
+            font-size: 14px;
+            color: #fff;
+            line-height: 1.8;
+          }
+          a {
+            font-weight: 700;
+            color: #ffe400;
+            text-transform: uppercase;
+            font-size: 18px;
+            display: block;
+            padding-top: 15px;
+          }
+        }
+      }
+
+      // Tablet ekranlar için (768px ve altı)
+      @media (max-width: 768px) {
+        .aboutCart {
+          flex: 1 1 calc(50% - 20px);
+        }
+
+        .aboutCartContent {
+          h4 {
+            font-size: 20px;
+          }
+          p {
+            font-size: 13px;
+          }
+          a {
+            font-size: 16px;
+          }
+        }
+      }
+
+      // Küçük ekranlar için (480px ve altı)
+      @media (max-width: 480px) {
+        .aboutCart {
+          flex: 1 1 100%;
+          padding: 15px;
+        }
+
+        .aboutCartContent {
+          h4 {
+            font-size: 18px;
+            margin-bottom: 15px;
+          }
+          p {
+            font-size: 12px;
+            line-height: 1.6;
+          }
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,142 @@
+@import "../pages/mixins";
+
+.aboutBackImg {
+  background: url(https://preview.colorlib.com/theme/eighty8/img/page-info-bg.jpg.webp)
+    no-repeat center/cover;
+  height: calc(100vh - 350px);
+  padding-top: calc(20vh);
+  text-align: center;
+
+  h2 {
+    @include yellow-underline;
+    font-size: calc(2.3rem + 2.3vw);
+  }
+}
+
+.chartsCartSection {
+  padding-bottom: 90px;
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+
+    .chartsTop {
+      display: flex;
+      gap: 20px; // Kartlar arasındaki boşluk
+
+      .chartsCart {
+        @include hover-underline;
+
+        position: relative;
+
+        .homeCartPict {
+          position: relative;
+          img {
+            width: 100%;
+            height: auto;
+          }
+
+          h2 {
+            position: absolute;
+            z-index: 2;
+            font-size: 24px;
+            color: white;
+            bottom: 20px;
+            left: 34%;
+          }
+        }
+      }
+    }
+    // Daha küçük ekranlar için medya sorguları
+    @media (max-width: 1024px) {
+      .chartsTop {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+.thisWeekSection {
+  margin-top: 50px;
+  div {
+    text-align: center;
+    h2 {
+      @include yellow-underline;
+    }
+  }
+  .thisWeek {
+    padding-bottom: 86px;
+    margin-top: 30px;
+
+    table {
+      display: flex;
+      flex-wrap: wrap;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .thisWeekRow {
+      display: flex;
+    }
+
+    .thisWeekItem {
+      display: flex;
+      align-items: center;
+      height: 80px;
+      color: white;
+      padding: 50px 0px;
+      width: 100%;
+      gap: 20px;
+      border-bottom: 1px solid #303030;
+      margin: 5px;
+
+      .rank {
+        font-size: 36px;
+        font-weight: 700;
+        color: #fff;
+        width: 78px;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      img {
+        width: 60px;
+        height: 60px;
+        margin-right: 15px;
+        object-fit: cover;
+      }
+
+      .songInfo {
+        flex-grow: 1;
+        padding-right: 50px;
+        padding-left: 10px;
+
+        .songTitle {
+          font-size: 24px;
+          font-weight: 600;
+        }
+
+        .artistText {
+          font-size: 14px;
+          color: #fff;
+          line-height: 1.8;
+        }
+      }
+
+      .youtubeIcon img {
+        width: 41px;
+        height: 30px;
+      }
+    }
+  }
+}
+
+// Responsive tasarım için medya sorguları
+@media (max-width: 460px) {
+  .thisWeekSection .thisWeek .thisWeekItem img {
+    display: none;
+  }
+}

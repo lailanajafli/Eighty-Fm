@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+main {
+  background-color: #191919;
+}
+
 .header {
   background: #212121;
   padding: 29px 36px;
@@ -156,6 +160,28 @@
 .heroSection .locations .row .location p {
   color: white;
   font-size: 14px;
+}
+@media (max-width: 1252px) {
+  .heroSection .locations .heroSection .slider .prev {
+    display: none;
+  }
+}
+@media (max-width: 762px) {
+  .heroSection .locations .heroSection .slider .next {
+    display: none;
+  }
+}
+@media (max-width: 785px) {
+  .heroSection .locations .heroSection .locations .row .location {
+    text-align: center;
+    flex: 1 1 27%;
+    max-width: 44.6%;
+  }
+}
+@media (max-width: 400px) {
+  .heroSection .locations .heroSection .locations .row .location {
+    display: none;
+  }
 }
 .heroSection .slider {
   position: relative;
@@ -326,6 +352,27 @@
   font-size: 36px;
   color: white;
 }
+@media (max-width: 1024px) {
+  .homeCard .homeCard .row .col-md-4 {
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 1174px) {
+  .homeCard .homeCard .row .col-md-4 .homeCartPict {
+    width: 250px;
+  }
+}
+@media (max-width: 840px) {
+  .homeCard .homeCard .row .col-md-4 .homeCartPict {
+    width: 450px;
+  }
+}
+@media (max-width: 800px) {
+  .homeCard .homeCard .row {
+    flex-wrap: wrap;
+  }
+}
 
 .latestPodcastSection .container {
   max-width: 1200px;
@@ -348,7 +395,7 @@
   content: "";
   display: block;
   width: 100%;
-  height: 3px;
+  height: 4px;
   background-color: #ffe400;
   margin-top: 11px;
 }
@@ -380,7 +427,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 117px;
+  height: 135px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(1).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -389,7 +436,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 79px;
+  height: 78px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(2).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -398,7 +445,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 166px;
+  height: 170px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(3).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -407,7 +454,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 81px;
+  height: 146px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(4).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -416,7 +463,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 162px;
+  height: 134px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(5).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -425,7 +472,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 77px;
+  height: 113px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(6).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -434,7 +481,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 110px;
+  height: 142px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(7).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -443,7 +490,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 112px;
+  height: 151px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(8).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -452,7 +499,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 133px;
+  height: 106px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(9).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -461,7 +508,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 138px;
+  height: 71px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(10).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -470,7 +517,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 148px;
+  height: 90px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(11).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -479,7 +526,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 142px;
+  height: 154px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(12).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -488,7 +535,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 85px;
+  height: 146px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(13).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -506,7 +553,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 154px;
+  height: 89px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(15).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -515,7 +562,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 148px;
+  height: 127px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(16).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -524,7 +571,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 135px;
+  height: 97px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(17).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -533,7 +580,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 157px;
+  height: 162px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(18).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -542,7 +589,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 101px;
+  height: 83px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(19).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -551,7 +598,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 134px;
+  height: 84px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(20).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -560,7 +607,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 165px;
+  height: 77px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(21).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -569,7 +616,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 167px;
+  height: 161px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(22).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -578,7 +625,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 97px;
+  height: 116px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(23).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -587,7 +634,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 122px;
+  height: 86px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(24).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -596,7 +643,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 101px;
+  height: 120px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(25).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -605,7 +652,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 132px;
+  height: 111px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(26).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -614,7 +661,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 94px;
+  height: 85px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(27).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -623,7 +670,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 77px;
+  height: 95px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(28).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -632,7 +679,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 88px;
+  height: 106px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(29).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -650,7 +697,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 115px;
+  height: 125px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(31).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -659,7 +706,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 136px;
+  height: 137px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(32).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -668,7 +715,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 162px;
+  height: 100px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(33).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -677,7 +724,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 106px;
+  height: 100px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(34).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -686,7 +733,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 138px;
+  height: 75px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(35).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -695,7 +742,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 141px;
+  height: 120px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(36).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -704,7 +751,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 74px;
+  height: 72px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(37).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -713,7 +760,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 111px;
+  height: 134px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(38).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -722,7 +769,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 108px;
+  height: 145px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(39).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -731,7 +778,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 116px;
+  height: 124px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(40).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -740,7 +787,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 138px;
+  height: 133px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(41).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -749,7 +796,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 143px;
+  height: 79px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(42).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -758,7 +805,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 139px;
+  height: 131px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(43).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -767,7 +814,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 120px;
+  height: 105px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(44).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -776,7 +823,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 87px;
+  height: 135px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(45).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -785,7 +832,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 109px;
+  height: 120px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(46).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -794,7 +841,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 81px;
+  height: 78px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(47).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -803,7 +850,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 74px;
+  height: 148px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(48).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -812,7 +859,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 99px;
+  height: 166px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(49).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -821,7 +868,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 122px;
+  height: 153px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(50).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -830,7 +877,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 158px;
+  height: 104px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(51).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -839,7 +886,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 149px;
+  height: 163px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(52).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -848,7 +895,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 166px;
+  height: 76px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(53).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -857,7 +904,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 167px;
+  height: 77px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(54).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -866,7 +913,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 135px;
+  height: 137px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(55).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -875,7 +922,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 170px;
+  height: 152px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(56).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -884,7 +931,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 133px;
+  height: 131px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(57).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -893,7 +940,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 164px;
+  height: 122px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(58).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -902,7 +949,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 133px;
+  height: 91px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(59).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -911,7 +958,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 165px;
+  height: 159px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(60).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -920,7 +967,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 97px;
+  height: 170px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(61).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -929,7 +976,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 164px;
+  height: 166px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(62).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -938,7 +985,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 137px;
+  height: 127px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(63).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -947,7 +994,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 160px;
+  height: 77px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(64).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -956,7 +1003,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 86px;
+  height: 162px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(65).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -965,7 +1012,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 139px;
+  height: 152px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(66).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -974,7 +1021,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 98px;
+  height: 168px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(67).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -983,7 +1030,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 100px;
+  height: 129px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(68).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -992,7 +1039,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 136px;
+  height: 103px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(69).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1001,7 +1048,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 144px;
+  height: 113px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(70).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1010,7 +1057,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 151px;
+  height: 162px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(71).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1019,7 +1066,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 83px;
+  height: 101px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(72).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1028,7 +1075,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 134px;
+  height: 84px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(73).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1037,7 +1084,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 85px;
+  height: 156px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(74).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1046,7 +1093,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 160px;
+  height: 166px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(75).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1055,7 +1102,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 152px;
+  height: 111px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(76).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1064,7 +1111,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 156px;
+  height: 106px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(77).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1073,7 +1120,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 151px;
+  height: 122px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(78).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1082,7 +1129,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 156px;
+  height: 84px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(79).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1091,7 +1138,7 @@
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 145px;
+  height: 86px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(80).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1113,6 +1160,18 @@
 }
 .latestPodcastSection .container .podcast-container .listen-button:hover {
   background-color: #e6c700;
+}
+@media (max-width: 613px) {
+  .latestPodcastSection .container .latestPodcastSection .podcast-container .podcast-content {
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 613px) {
+  .latestPodcastSection .container .rightPodcast {
+    overflow: hidden;
+  }
 }
 @keyframes wave {
   0% {
@@ -1140,7 +1199,7 @@
   content: "";
   display: block;
   width: 100%;
-  height: 3px;
+  height: 4px;
   background-color: #ffe400;
   margin-top: 11px;
 }
@@ -1182,59 +1241,416 @@
     width: 0;
   }
 }
-@media (max-width: 1252px) {
-  .heroSection .slider .prev {
-    display: none;
-  }
+.aboutBackImg {
+  background: url(https://preview.colorlib.com/theme/eighty8/img/page-info-bg.jpg.webp) no-repeat center/cover;
+  height: calc(100vh - 350px);
+  padding-top: 20vh;
+  text-align: center;
 }
-@media (max-width: 762px) {
-  .heroSection .slider .next {
-    display: none;
-  }
+.aboutBackImg h2 {
+  position: relative;
+  display: inline-block;
+  font-size: 36px;
+  color: white;
+  font-size: calc(2.3rem + 2.3vw);
 }
-@media (max-width: 785px) {
-  .heroSection .locations .row .location {
-    text-align: center;
-    flex: 1 1 27%;
-    max-width: 44.6%;
-  }
+.aboutBackImg h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #ffe400;
+  margin-top: 11px;
 }
-@media (max-width: 400px) {
-  .heroSection .locations .row .location {
-    display: none;
-  }
+
+.shortHistorySection {
+  padding: 20px;
+}
+.shortHistorySection .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.shortHistorySection .container .row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+.shortHistorySection .container .row .topHistory {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.shortHistorySection .container .row .topHistory .bottomHistoryImg {
+  flex: 1;
+}
+.shortHistorySection .container .row .topHistory .bottomHistoryImg img {
+  width: 100%;
+  height: auto;
+}
+.shortHistorySection .container .row .topHistory .bottomHistoryText {
+  flex: 1;
+}
+.shortHistorySection .container .row .topHistory .bottomHistoryText h4 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 24px;
+}
+.shortHistorySection .container .row .topHistory .bottomHistoryText p {
+  font-size: 16px;
+  margin-bottom: 0;
+  color: white;
+  line-height: 1.8;
 }
 @media (max-width: 1024px) {
-  .homeCard .row .col-md-4 {
-    margin-bottom: 20px;
-    max-width: 100%;
+  .shortHistorySection .container .row .row {
+    gap: 40px;
+  }
+  .shortHistorySection .container .row .topHistory {
+    gap: 40px;
+  }
+  .shortHistorySection .container .row .topHistory .bottomHistoryImg img {
+    border-radius: 8px;
+  }
+  .shortHistorySection .container .row .bottomHistoryText h4 {
+    font-size: 22px;
+  }
+  .shortHistorySection .container .row .bottomHistoryText p {
+    font-size: 15px;
   }
 }
-@media (max-width: 1174px) {
-  .homeCard .row .col-md-4 .homeCartPict {
-    width: 250px;
+@media (max-width: 768px) {
+  .shortHistorySection .container .row .topHistory {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  .shortHistorySection .container .row .topHistory .bottomHistoryImg,
+  .shortHistorySection .container .row .topHistory .bottomHistoryText {
+    flex: unset;
+    width: 100%;
+  }
+  .shortHistorySection .container .row .bottomHistoryText h4 {
+    font-size: 20px;
+  }
+  .shortHistorySection .container .row .bottomHistoryText p {
+    font-size: 14px;
   }
 }
-@media (max-width: 840px) {
-  .homeCard .row .col-md-4 .homeCartPict {
-    width: 450px;
+@media (max-width: 480px) {
+  .shortHistorySection .container .row {
+    padding: 10px;
+  }
+  .shortHistorySection .container .row .row {
+    gap: 20px;
+  }
+  .shortHistorySection .container .row .topHistory {
+    gap: 20px;
+  }
+  .shortHistorySection .container .row .bottomHistoryText h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .shortHistorySection .container .row .bottomHistoryText p {
+    font-size: 13px;
+    line-height: 1.6;
   }
 }
-@media (max-width: 800px) {
-  .homeCard .row {
+
+.youtubeVideo {
+  background-image: url(https://preview.colorlib.com/theme/eighty8/img/video-preview-bg.jpg.webp);
+  min-height: 736px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.youtubeVideo .container .ytContent {
+  text-align: center;
+  padding: 0px 20px;
+}
+.youtubeVideo .container .ytContent h2 {
+  position: relative;
+  display: inline-block;
+  font-size: 36px;
+  color: white;
+  margin-bottom: 50px;
+}
+.youtubeVideo .container .ytContent h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #ffe400;
+  margin-top: 11px;
+}
+.youtubeVideo .container .ytContent p {
+  font-size: 18px;
+  color: white;
+  text-align: center;
+}
+.youtubeVideo .container .ytContent a img {
+  margin-top: 50px;
+}
+
+.aboutCartSection {
+  padding: 20px;
+  margin-top: 60px;
+}
+.aboutCartSection .container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.aboutCartSection .container .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.aboutCartSection .container .row .aboutCartCont {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.aboutCartSection .container .row .aboutCart {
+  flex: 1 1 calc(33.333% - 20px);
+  padding: 20px;
+}
+.aboutCartSection .container .row .aboutCart .aboutCartImg img {
+  width: 100%;
+}
+.aboutCartSection .container .row .aboutCart .aboutCartContent h4 {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: white;
+}
+.aboutCartSection .container .row .aboutCart .aboutCartContent p {
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.8;
+}
+.aboutCartSection .container .row .aboutCart .aboutCartContent a {
+  font-weight: 700;
+  color: #ffe400;
+  text-transform: uppercase;
+  font-size: 18px;
+  display: block;
+  padding-top: 15px;
+}
+@media (max-width: 768px) {
+  .aboutCartSection .container .row .aboutCart {
+    flex: 1 1 calc(50% - 20px);
+  }
+  .aboutCartSection .container .row .aboutCartContent h4 {
+    font-size: 20px;
+  }
+  .aboutCartSection .container .row .aboutCartContent p {
+    font-size: 13px;
+  }
+  .aboutCartSection .container .row .aboutCartContent a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .aboutCartSection .container .row .aboutCart {
+    flex: 1 1 100%;
+    padding: 15px;
+  }
+  .aboutCartSection .container .row .aboutCartContent h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .aboutCartSection .container .row .aboutCartContent p {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  .aboutCartSection .container .row .aboutCartContent a {
+    font-size: 14px;
+  }
+}
+
+.aboutBackImg {
+  background: url(https://preview.colorlib.com/theme/eighty8/img/page-info-bg.jpg.webp) no-repeat center/cover;
+  height: calc(100vh - 350px);
+  padding-top: 20vh;
+  text-align: center;
+}
+.aboutBackImg h2 {
+  position: relative;
+  display: inline-block;
+  font-size: 36px;
+  color: white;
+  font-size: calc(2.3rem + 2.3vw);
+}
+.aboutBackImg h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #ffe400;
+  margin-top: 11px;
+}
+
+.chartsCartSection {
+  padding-bottom: 90px;
+}
+.chartsCartSection .container {
+  width: 80%;
+  margin: 0 auto;
+}
+.chartsCartSection .container .chartsTop {
+  display: flex;
+  gap: 20px;
+}
+.chartsCartSection .container .chartsTop .chartsCart {
+  width: 360px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  position: relative;
+}
+.chartsCartSection .container .chartsTop .chartsCart::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #000;
+  opacity: 0.75;
+  z-index: 1;
+  transition: all 0.4s;
+}
+.chartsCartSection .container .chartsTop .chartsCart::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  background: #ffe400;
+  z-index: 2;
+  transition: width 0.4s ease;
+}
+.chartsCartSection .container .chartsTop .chartsCart:hover::after {
+  animation: slideRight 0.4s forwards;
+}
+.chartsCartSection .container .chartsTop .chartsCart:not(:hover)::after {
+  animation: slideOut 1s forwards;
+}
+.chartsCartSection .container .chartsTop .chartsCart:hover::before {
+  opacity: 0;
+}
+.chartsCartSection .container .chartsTop .chartsCart .homeCartPict {
+  position: relative;
+}
+.chartsCartSection .container .chartsTop .chartsCart .homeCartPict img {
+  width: 100%;
+  height: auto;
+}
+.chartsCartSection .container .chartsTop .chartsCart .homeCartPict h2 {
+  position: absolute;
+  z-index: 2;
+  font-size: 24px;
+  color: white;
+  bottom: 20px;
+  left: 34%;
+}
+@media (max-width: 1024px) {
+  .chartsCartSection .container .chartsTop {
+    justify-content: center;
     flex-wrap: wrap;
   }
 }
-@media (max-width: 613px) {
-  .latestPodcastSection .podcast-container .podcast-content {
-    flex-wrap: wrap;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+
+.thisWeekSection {
+  margin-top: 50px;
 }
-@media (max-width: 613px) {
-  .rightPodcast {
-    overflow: hidden;
+.thisWeekSection div {
+  text-align: center;
+}
+.thisWeekSection div h2 {
+  position: relative;
+  display: inline-block;
+  font-size: 36px;
+  color: white;
+}
+.thisWeekSection div h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #ffe400;
+  margin-top: 11px;
+}
+.thisWeekSection .thisWeek {
+  padding-bottom: 86px;
+  margin-top: 30px;
+}
+.thisWeekSection .thisWeek table {
+  display: flex;
+  flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.thisWeekSection .thisWeek .thisWeekRow {
+  display: flex;
+}
+.thisWeekSection .thisWeek .thisWeekItem {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  color: white;
+  padding: 50px 0px;
+  width: 100%;
+  gap: 20px;
+  border-bottom: 1px solid #303030;
+  margin: 5px;
+}
+.thisWeekSection .thisWeek .thisWeekItem .rank {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  width: 78px;
+  text-align: center;
+  vertical-align: middle;
+}
+.thisWeekSection .thisWeek .thisWeekItem img {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.thisWeekSection .thisWeek .thisWeekItem .songInfo {
+  flex-grow: 1;
+  padding-right: 50px;
+  padding-left: 10px;
+}
+.thisWeekSection .thisWeek .thisWeekItem .songInfo .songTitle {
+  font-size: 24px;
+  font-weight: 600;
+}
+.thisWeekSection .thisWeek .thisWeekItem .songInfo .artistText {
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.8;
+}
+.thisWeekSection .thisWeek .thisWeekItem .youtubeIcon img {
+  width: 41px;
+  height: 30px;
+}
+
+@media (max-width: 460px) {
+  .thisWeekSection .thisWeek .thisWeekItem img {
+    display: none;
   }
 }
 .footer {
@@ -1267,7 +1683,7 @@
   content: "";
   display: block;
   width: 100%;
-  height: 3px;
+  height: 4px;
   background-color: #ffe400;
   margin-top: 11px;
 }
