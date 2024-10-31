@@ -3,7 +3,7 @@
 .footer {
   background: #212121;
   padding: 100px 0;
-  
+
   .container {
     width: 80%;
     padding: 0 15px;
@@ -105,7 +105,7 @@
 
     .container {
       width: 90%;
-      
+
       .row {
         gap: 20px;
       }
@@ -116,23 +116,23 @@
 @media (max-width: 768px) {
   .footer {
     padding: 60px 0;
-    
+
     .container {
       width: 95%;
 
       .row {
         grid-template-columns: 1fr;
         text-align: center;
-        
+
         .ftCont {
           .ftTitle h4 {
             font-size: 22px;
           }
-          
+
           .orderList a {
             font-size: 15px;
           }
-          
+
           .ftContact p {
             font-size: 15px;
           }
@@ -140,17 +140,18 @@
         .ftBlog {
           gap: 15px;
           .blogItem {
-flex-direction: column;
+            flex-direction: column;
             text-align: center;
-      
+
             .blogThumb {
               max-width: 80px;
               margin: 0 auto;
             }
-      
+
             .blogContent {
               align-items: center;
-              p, a {
+              p,
+              a {
                 font-size: 14px;
               }
             }
@@ -171,7 +172,8 @@ flex-direction: column;
       }
 
       .blogContent {
-        p, a {
+        p,
+        a {
           font-size: 12px;
         }
       }

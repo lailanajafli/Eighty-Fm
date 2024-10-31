@@ -1,0 +1,13 @@
+@import "../pages/mixins";
+
+.aboutBackImg {
+  background: url(https://preview.colorlib.com/theme/eighty8/img/page-info-bg.jpg.webp)
+    no-repeat center/cover;
+  height: calc(100vh - 350px);
+  padding-top: calc(20vh);
+  text-align: center;
+  h2 {
+    @include yellow-underline;
+    font-size: calc(2.3rem + 2.3vw);
+  }
+}
