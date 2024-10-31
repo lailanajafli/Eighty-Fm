@@ -161,28 +161,6 @@ main {
   color: white;
   font-size: 14px;
 }
-@media (max-width: 1252px) {
-  .heroSection .locations .heroSection .slider .prev {
-    display: none;
-  }
-}
-@media (max-width: 762px) {
-  .heroSection .locations .heroSection .slider .next {
-    display: none;
-  }
-}
-@media (max-width: 785px) {
-  .heroSection .locations .heroSection .locations .row .location {
-    text-align: center;
-    flex: 1 1 27%;
-    max-width: 44.6%;
-  }
-}
-@media (max-width: 400px) {
-  .heroSection .locations .heroSection .locations .row .location {
-    display: none;
-  }
-}
 .heroSection .slider {
   position: relative;
   width: 100%;
@@ -352,27 +330,6 @@ main {
   font-size: 36px;
   color: white;
 }
-@media (max-width: 1024px) {
-  .homeCard .homeCard .row .col-md-4 {
-    margin-bottom: 20px;
-    max-width: 100%;
-  }
-}
-@media (max-width: 1174px) {
-  .homeCard .homeCard .row .col-md-4 .homeCartPict {
-    width: 250px;
-  }
-}
-@media (max-width: 840px) {
-  .homeCard .homeCard .row .col-md-4 .homeCartPict {
-    width: 450px;
-  }
-}
-@media (max-width: 800px) {
-  .homeCard .homeCard .row {
-    flex-wrap: wrap;
-  }
-}
 
 .latestPodcastSection .container {
   max-width: 1200px;
@@ -427,7 +384,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 93px;
+  height: 117px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(1).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -436,7 +393,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 95px;
+  height: 91px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(2).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -445,7 +402,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 73px;
+  height: 102px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(3).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -454,7 +411,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 76px;
+  height: 146px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(4).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -463,7 +420,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 167px;
+  height: 112px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(5).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -472,7 +429,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 152px;
+  height: 103px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(6).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -481,7 +438,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 166px;
+  height: 141px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(7).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -490,7 +447,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 118px;
+  height: 161px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(8).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -499,7 +456,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 168px;
+  height: 106px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(9).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -508,7 +465,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 103px;
+  height: 169px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(10).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -517,7 +474,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 159px;
+  height: 101px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(11).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -526,7 +483,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 124px;
+  height: 152px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(12).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -535,7 +492,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 129px;
+  height: 78px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(13).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -544,7 +501,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 134px;
+  height: 148px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(14).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -553,7 +510,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 169px;
+  height: 156px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(15).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -562,7 +519,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 87px;
+  height: 124px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(16).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -571,7 +528,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 96px;
+  height: 155px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(17).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -580,7 +537,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 98px;
+  height: 118px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(18).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -589,7 +546,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 107px;
+  height: 162px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(19).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -598,7 +555,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 155px;
+  height: 140px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(20).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -607,7 +564,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 89px;
+  height: 87px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(21).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -616,7 +573,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 151px;
+  height: 94px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(22).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -625,7 +582,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 147px;
+  height: 112px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(23).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -634,7 +591,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 117px;
+  height: 169px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(24).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -643,7 +600,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 161px;
+  height: 128px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(25).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -652,7 +609,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 123px;
+  height: 139px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(26).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -661,7 +618,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 94px;
+  height: 154px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(27).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -670,7 +627,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 165px;
+  height: 158px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(28).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -679,7 +636,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 75px;
+  height: 148px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(29).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -688,7 +645,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 77px;
+  height: 106px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(30).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -697,7 +654,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 91px;
+  height: 78px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(31).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -706,7 +663,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 153px;
+  height: 116px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(32).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -715,7 +672,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 89px;
+  height: 130px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(33).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -724,7 +681,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 100px;
+  height: 163px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(34).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -733,7 +690,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 117px;
+  height: 116px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(35).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -742,7 +699,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 124px;
+  height: 115px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(36).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -751,7 +708,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 132px;
+  height: 138px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(37).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -760,7 +717,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 77px;
+  height: 148px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(38).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -769,7 +726,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 148px;
+  height: 155px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(39).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -778,7 +735,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 101px;
+  height: 125px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(40).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -787,7 +744,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 153px;
+  height: 81px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(41).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -796,7 +753,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 135px;
+  height: 159px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(42).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -805,7 +762,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 113px;
+  height: 94px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(43).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -814,7 +771,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 96px;
+  height: 82px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(44).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -823,7 +780,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 164px;
+  height: 97px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(45).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -832,7 +789,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 121px;
+  height: 120px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(46).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -841,7 +798,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 116px;
+  height: 103px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(47).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -850,7 +807,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 97px;
+  height: 165px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(48).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -859,7 +816,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 106px;
+  height: 142px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(49).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -868,7 +825,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 129px;
+  height: 150px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(50).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -877,7 +834,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 91px;
+  height: 158px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(51).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -886,7 +843,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 105px;
+  height: 156px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(52).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -895,7 +852,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 163px;
+  height: 91px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(53).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -904,7 +861,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 119px;
+  height: 137px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(54).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -913,7 +870,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 100px;
+  height: 165px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(55).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -922,7 +879,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 129px;
+  height: 102px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(56).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -931,7 +888,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 129px;
+  height: 143px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(57).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -940,7 +897,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 91px;
+  height: 163px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(58).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -949,7 +906,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 105px;
+  height: 136px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(59).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -958,7 +915,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 111px;
+  height: 93px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(60).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -967,7 +924,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 152px;
+  height: 153px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(61).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -976,7 +933,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 128px;
+  height: 98px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(62).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -985,7 +942,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 143px;
+  height: 139px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(63).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -994,7 +951,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 112px;
+  height: 139px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(64).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1003,7 +960,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 147px;
+  height: 166px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(65).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1012,7 +969,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 110px;
+  height: 95px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(66).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1021,7 +978,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 130px;
+  height: 140px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(67).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1030,7 +987,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 157px;
+  height: 136px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(68).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1039,7 +996,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 134px;
+  height: 166px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(69).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1048,7 +1005,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 139px;
+  height: 100px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(70).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1057,7 +1014,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 146px;
+  height: 148px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(71).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1066,7 +1023,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 160px;
+  height: 163px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(72).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1075,7 +1032,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 75px;
+  height: 151px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(73).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1084,7 +1041,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 92px;
+  height: 144px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(74).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1093,7 +1050,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 82px;
+  height: 110px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(75).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1102,7 +1059,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 161px;
+  height: 92px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(76).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1111,7 +1068,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 73px;
+  height: 88px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(77).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1120,7 +1077,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 146px;
+  height: 98px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(78).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1129,7 +1086,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 135px;
+  height: 165px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(79).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1138,7 +1095,7 @@ main {
   width: 1.5px;
   background-color: #ffffff;
   border-radius: 2px;
-  height: 153px;
+  height: 77px;
 }
 .latestPodcastSection .container .podcast-container .podcast-content .audio-wave .bar:nth-child(80).animate {
   animation: wave 0.5s infinite ease-in-out alternate;
@@ -1160,18 +1117,6 @@ main {
 }
 .latestPodcastSection .container .podcast-container .listen-button:hover {
   background-color: #e6c700;
-}
-@media (max-width: 613px) {
-  .latestPodcastSection .container .latestPodcastSection .podcast-container .podcast-content {
-    flex-wrap: wrap;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-@media (max-width: 613px) {
-  .latestPodcastSection .container .rightPodcast {
-    overflow: hidden;
-  }
 }
 @keyframes wave {
   0% {
@@ -1239,6 +1184,61 @@ main {
   to {
     left: 100%;
     width: 0;
+  }
+}
+@media (max-width: 1252px) {
+  .heroSection .slider .prev {
+    display: none;
+  }
+}
+@media (max-width: 762px) {
+  .heroSection .slider .next {
+    display: none;
+  }
+}
+@media (max-width: 785px) {
+  .heroSection .locations .row .location {
+    text-align: center;
+    flex: 1 1 27%;
+    max-width: 44.6%;
+  }
+}
+@media (max-width: 400px) {
+  .heroSection .locations .row .location {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .homeCard .row .col-md-4 {
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 1174px) {
+  .homeCard .row .col-md-4 .homeCartPict {
+    width: 250px;
+  }
+}
+@media (max-width: 840px) {
+  .homeCard .row .col-md-4 .homeCartPict {
+    width: 450px;
+  }
+}
+@media (max-width: 800px) {
+  .homeCard .row {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 613px) {
+  .latestPodcastSection .podcast-container .podcast-content {
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 613px) {
+  .rightPodcast {
+    overflow: hidden;
   }
 }
 .aboutBackImg {
@@ -1424,6 +1424,7 @@ main {
 .aboutCartSection .container .row .aboutCart .aboutCartContent h4 {
   font-weight: 700;
   font-size: 24px;
+  margin-top: 20px;
   margin-bottom: 20px;
   color: white;
 }
