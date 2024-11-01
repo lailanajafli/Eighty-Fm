@@ -321,7 +321,7 @@
   }
 }
 
-// Responsive Medya Sorguları
+
 @media (max-width: 1252px) {
   .heroSection {
     .slider {
@@ -335,6 +335,7 @@
 @media (max-width: 762px) {
   .heroSection {
     .slider {
+      margin-top: 80px;
       .next {
         display: none;
       }
