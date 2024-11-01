@@ -119,7 +119,98 @@
   }
 }
 
-// Responsive Düzenlemeler
+.monthNameSection {
+  margin-top: 80px;
+
+  .container {
+    margin: 0 auto;
+
+    .monthNameCont {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 50px;
+      margin-bottom: 50px;
+
+      a {
+        font-size: 24px;
+        color: white;
+        font-weight: 500;
+      }
+
+      .friday {
+        @include yellow-underline;
+        font-size: 24px;
+        font-weight: 500;
+        border-bottom: 1px solid #fff;
+      }
+    }
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    max-width: 1200px;
+    padding: 1rem;
+  }
+
+  .show {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      opacity: 0.5;
+      transition: opacity 0.3s;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    .info {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: transparent;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      transition: background 0.3s;
+
+      .time {
+        background-color: #ffe400;
+        color: #111;
+        font-weight: bold;
+        padding: 8px 5px;
+        opacity: 1;
+      }
+
+      .title {
+        font-size: 16px;
+        color: white;
+        padding: 8px 0px;
+        font-weight: 500;
+      }
+    }
+
+    &:hover .info {
+      background: rgba(0, 0, 0, 0.7);
+    }
+  }
+  .loadMoreCont {
+    text-align: center;
+    margin-top: 50px;
+padding-bottom: 80px;
+    .loadMore {
+     @include yellowBtn
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .grid-container {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

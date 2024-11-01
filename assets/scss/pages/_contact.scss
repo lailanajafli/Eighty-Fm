@@ -11,3 +11,106 @@
     font-size: calc(2.3rem + 2.3vw);
   }
 }
+
+.contactCountry {
+  margin-top: 20px;
+
+  .container {
+    margin: 0 auto;
+
+    .monthNameCont {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 50px;
+      a {
+        font-size: 17px;
+        color: white;
+        font-weight: 500;
+      }
+    }
+    .ftContact {
+      text-align: center;
+      margin-top: 75px;
+      p {
+        font-size: 16px;
+        color: #fff;
+        line-height: 1.8;
+        span {
+          color: #ffe400;
+        }
+      }
+    }
+    .map {
+      opacity: 0.5;
+      width: 80%;
+      position: relative;
+      margin: 0 auto;
+      margin-top: 60px;
+      height: 570px;
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.contactForm {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    .row {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+      color: #aaa;
+      div {
+        text-align: center;
+        margin-top: 50px;
+        h2 {
+          @include yellow-underline;
+        }
+      }
+      .form-row {
+        display: flex;
+        gap: 20px;
+
+        input,
+        textarea {
+          flex: 1;
+          padding: 10px;
+          border: none;
+          border-bottom: 1px solid #c0c0c0;
+          background-color: transparent;
+          color: #aaa;
+          font-size: 16px;
+          outline: none;
+
+          &::placeholder {
+            color: #c0c0c0;
+          }
+        }
+
+        textarea {
+          resize: none;
+          height: 150px;
+        }
+      }
+      button{
+        @include yellowBtn;
+        padding: 14px 40px;
+      }
+
+      // Responsive ayarlar
+      @media (max-width: 768px) {
+        .form-row {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
