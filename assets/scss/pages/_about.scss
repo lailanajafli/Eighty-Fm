@@ -54,7 +54,7 @@
         }
       }
 
-      // Tablet ekranlar için
+
       @media (max-width: 1024px) {
         .row {
           gap: 40px;
@@ -76,7 +76,7 @@
         }
       }
 
-      // Küçük ekranlar için
+
       @media (max-width: 768px) {
         .topHistory {
           flex-direction: column;
@@ -99,7 +99,7 @@
         }
       }
 
-      // Küçük mobil ekranlar için
+
       @media (max-width: 480px) {
         padding: 10px;
         .row {
@@ -210,7 +210,6 @@
         }
       }
 
-      // Tablet ekranlar için (768px ve altı)
       @media (max-width: 768px) {
         .aboutCart {
           flex: 1 1 calc(50% - 20px);
@@ -229,7 +228,6 @@
         }
       }
 
-      // Küçük ekranlar için (480px ve altı)
       @media (max-width: 480px) {
         .aboutCart {
           flex: 1 1 100%;

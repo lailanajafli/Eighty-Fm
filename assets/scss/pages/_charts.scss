@@ -21,7 +21,7 @@
 
     .chartsTop {
       display: flex;
-      gap: 20px; // Kartlar arasındaki boşluk
+      gap: 20px;
 
       .chartsCart {
         @include hover-underline;
@@ -46,7 +46,7 @@
         }
       }
     }
-    // Daha küçük ekranlar için medya sorguları
+
     @media (max-width: 1024px) {
       .chartsTop {
         justify-content: center;
@@ -133,7 +133,7 @@
   }
 }
 
-// Responsive tasarım için medya sorguları
+
 @media (max-width: 460px) {
   .thisWeekSection .thisWeek .thisWeekItem img {
     display: none;
